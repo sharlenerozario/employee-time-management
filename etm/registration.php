@@ -11,12 +11,6 @@
             <div class="row">
             <div class="col-md-6 user-registration">
                 <h2>Register Here</h2>
-                <?php
-                    session_start();
-                    if(isset($_SESSION['username'])){ //if session variable is set redirect to the same page with a warning
-                    
-                    }
-                ?>
                 <form action="registration-validation.php" method="post">
                     <h6>Enter the username and password provided by admin</h6>
                     <div class="form-group">
