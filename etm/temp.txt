@@ -1,0 +1,139 @@
+........................time function...............................................
+<?php 
+
+$time= "09:58:55";
+
+$dif=strtotime($time)-strtotime("09:58:50");
+echo $dif."<br>";
+
+$converted=secondsToTime($dif);
+echo $converted."<br>";
+
+
+function secondsToTime($seconds) {
+  $dtF = new \DateTime('@0');
+  $dtT = new \DateTime("@$seconds");
+  return $dtF->diff($dtT)->format('%a days, %h hours, %i minutes and %s seconds');
+}
+
+
+?>
+
+
+
+
+
+...................................................................................
+
+ <?php
+              date_default_timezone_set('Asia/Dhaka');
+              $intime=time();
+              // echo '<p>'.$intime.'</p>';
+            ?>   
+...................................................................................
+
+
+
+
+
+<?php
+//$date = date("F-d-Y", strtotime("2015-07-24")); 
+date_default_timezone_set('Asia/Dhaka');
+// echo date('h:i:sa');
+
+$stime=time();
+
+$etime=time();
+$dif=$stime-$etime;
+echo($dif . "<br>");
+
+echo date('d/m/Y h:i:sa', $dif);
+echo "<br>";
+
+
+ ?>
+
+<?php
+date_default_timezone_set('Asia/Dhaka');
+$stime=time();
+echo date('d/m/Y h:i:sa', $stime);
+?>
+...................................................................................
+
+
+
+
+
+
+
+
+
+...................................................................................
+<?php
+$date = date("F-d-Y", strtotime("2015-07-24")); 
+echo "<button onclick=\"goToThisJSMethod('{$date}')\"> Pass </button>";
+?>
+...................................................................................
+
+
+
+
+
+
+
+
+
+
+
+...................................................................................
+<div class="row">
+            <div class="col-sm-3">
+            <div class="well">
+            <h3>Task</h3>
+            </div>
+            </div>
+
+            <div class="col-sm-9">
+            <div class="well">
+                <p>task details here</p>
+                <hr>
+                
+            </div>
+            </div>
+ </div>
+
+
+
+
+
+
+
+...................................................................................
+
+<!-- profile at first
+<?php
+session_start();
+if(!isset($_SESSION['username'])){ //if session variable isn't set (or cannot go back to profile page after logging out)
+    header('location:login.php');
+}
+?>
+
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <title>Profile Page</title>
+</head>
+<body>
+    <div class="container">
+        <a class="float-right" href="logout.php">Logout</a>
+        <h1>Welcome <?php echo $_SESSION['username'];?> </h1>
+    </div>
+    
+</body>
+</html> -->

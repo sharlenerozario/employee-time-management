@@ -1,0 +1,76 @@
+body{
+    background: linear-gradient(rgba(0,0,70,0.2),rgba(0,0,70,0.2)),url(img/login.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.login-box{
+    max-width: 700px;
+    float: none;
+    margin: 190px auto;
+}
+
+.user-login{
+    background: rgba(211,211,211,0.5);
+    padding: 30px;
+}
+
+.user-registration{
+    background: rgba(224, 164, 164, 0.5);;
+    padding: 30px;
+}
+
+.form-control{
+    background-color: transparent !important;
+    /* using important to overwrite the bootstrap class */
+}
+
+a{
+    color: rgb(59, 28, 28) !important;
+    margin-top: -400px;
+}
+
+h1{
+    color: #fff !important;
+    margin-top: 400px !important;
+    text-align: center;
+    text-transform: uppercase;
+}
+h2{
+    color: #fff !important;
+}
+h3{
+    color: rgb(27, 25, 63) !important;
+}
+
+
+
+footer {
+    background-color: #555;
+    color: white;
+    padding: 0px;
+    position: fixed; bottom: 0px;
+    right: 0;left:0;
+      
+}
+.container{
+    height: 100% !important;
+	padding: 0;
+}
+@media screen and (max-width: auto) {
+    
+	.col-sm-3{
+	  height: 100% !important;
+	  padding: 0;
+    }
+}
+
+table, th, td {
+    
+    text-align:center; color:#fff;
+  }
+
+  .col-sm-6{
+    height: 100% !important;
+    padding: 0;
+  }
